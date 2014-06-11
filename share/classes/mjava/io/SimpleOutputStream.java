@@ -10,7 +10,7 @@ public class SimpleOutputStream {
 
 	public static native void write(MString msg);
 
-	public static void main() {
+	public static void main(String[] args) {
 		char[] s = { 'H', 'e', 'l', 'l', 'o' };
 		write(new MString(s));
 	}
