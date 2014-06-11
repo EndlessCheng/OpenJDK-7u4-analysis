@@ -12,9 +12,9 @@ public class SimpleOutputStream {
 		write(msg.getValue());
 	}
 
-	public static native void write(char[] msg);
+	public native void write(char[] msg);
 
-	public static void main(String[] args) {
+	public static void run() {
 		char[] s = { 'H', 'e', 'l', 'l', 'o' };
 		new SimpleOutputStream().write(new MString(s));
 	}
