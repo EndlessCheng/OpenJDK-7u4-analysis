@@ -1,14 +1,17 @@
 package mjava.io;
 
+import mjava.lang.MString;
+
 public class SimpleOutputStream {
 
 	static {
 		System.loadLibrary("SimpleOutputStream");
 	}
 
-	public static native void write(String msg);
+	public static native void write(MString msg);
 
-	public static void main(String[] args) {
-		write("Hello, 简单输出流!");
+	public static void main() {
+		char[] s = { 'H', 'e', 'l', 'l', 'o' };
+		write(new MString(s));
 	}
 }
