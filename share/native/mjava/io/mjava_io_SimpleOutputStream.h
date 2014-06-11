@@ -10,10 +10,10 @@ extern "C" {
 /*
  * Class:     mjava_io_SimpleOutputStream
  * Method:    write
- * Signature: (Ljava/lang/String;)V
+ * Signature: ([C)V
  */
 JNIEXPORT void JNICALL Java_mjava_io_SimpleOutputStream_write
-  (JNIEnv *, jclass, jstring);
+  (JNIEnv *, jclass, jcharArray);
 
 #ifdef __cplusplus
 }
