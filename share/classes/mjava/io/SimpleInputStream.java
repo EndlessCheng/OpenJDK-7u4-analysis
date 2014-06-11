@@ -1,6 +1,6 @@
 package mjava.io;
 
-//import mjava.lang.MString;
+import mjava.lang.MString;
 
 public class SimpleInputStream {
 
@@ -10,17 +10,16 @@ public class SimpleInputStream {
 
 	public native boolean hasnextLine();
 
-	public native String readLine();
+	public native char[] readLine();
 
-	public void Run() {
+	public static void run() {
 
 		SimpleInputStream sis = new SimpleInputStream();
-		// SimpleOutputStream sos = new SimpleOutputStream();
+		SimpleOutputStream sos = new SimpleOutputStream();
 
 		while (sis.hasnextLine()) {
-			String s = sis.readLine();
-			System.out.println(s);
-			// sos.write(sis.readLine());
+			char s[] = sis.readLine();
+			sos.write(new MString(s));
 		}
 
 	}
