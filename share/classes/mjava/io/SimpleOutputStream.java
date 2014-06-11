@@ -8,10 +8,14 @@ public class SimpleOutputStream {
 		System.loadLibrary("SimpleOutputStream");
 	}
 
-	public static native void write(MString msg);
+	public void write(MString msg) {
+		write(msg.getValue(), msg.length());
+	}
+
+	public static native void write(char[] msg, int len);
 
 	public static void main(String[] args) {
 		char[] s = { 'H', 'e', 'l', 'l', 'o' };
-		write(new MString(s));
+		new SimpleOutputStream().write(new MString(s));
 	}
 }
