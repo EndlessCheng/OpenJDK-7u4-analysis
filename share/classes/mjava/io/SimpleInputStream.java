@@ -19,7 +19,13 @@ public class SimpleInputStream {
 
 		while (sis.hasnextLine()) {
 			char s[] = sis.readLine();
-			sos.write(new MString(s));
+			System.out.println(new String(s));
+			
+			
+			// 下面这行代码总是不显示东西，why？？？
+			//sos.write(new MString(s));
+			
+			
 		}
 
 	}
