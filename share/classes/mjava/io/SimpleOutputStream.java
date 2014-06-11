@@ -9,10 +9,10 @@ public class SimpleOutputStream {
 	}
 
 	public void write(MString msg) {
-		write(msg.getValue(), msg.length());
+		write(msg.getValue());
 	}
 
-	public static native void write(char[] msg, int len);
+	public static native void write(char[] msg);
 
 	public static void main(String[] args) {
 		char[] s = { 'H', 'e', 'l', 'l', 'o' };
