@@ -12,8 +12,7 @@ extern "C" {
  * Method:    write
  * Signature: ([C)V
  */
-JNIEXPORT void JNICALL Java_mjava_io_SimpleOutputStream_write
-  (JNIEnv *, jclass, jcharArray);
+JNIEXPORT void JNICALL Java_mjava_io_SimpleOutputStream_write (JNIEnv *, jclass, jcharArray);
 
 #ifdef __cplusplus
 }
