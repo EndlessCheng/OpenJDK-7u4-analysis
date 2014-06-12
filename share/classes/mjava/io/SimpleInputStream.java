@@ -18,7 +18,7 @@ public class SimpleInputStream {
 		SimpleOutputStream sos = new SimpleOutputStream();
 
 		while (sis.hasnextLine()) {
-			char s[] = sis.readLine();
+			char[] s = sis.readLine();
 			System.out.println(new String(s));
 			
 			
