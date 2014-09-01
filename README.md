@@ -10,4 +10,4 @@ OpenJDK 7 源码剖析，一步步学习 Java 源码实现，详细到 Java 字�
 参考
 ===================
 [常量池](http://baike.baidu.com/view/8680346.htm)<br />
-[虚拟机字节码指令表](http://docs.oracle.com/javase/specs/jvms/se7/html/jvms-6.html#jvms-6.5)<br />
+[虚拟机字节码指令表](http://docs.oracle.com/javase/specs/jvms/se7/html/jvms-6.html#jvms-6.5)（可能要翻墙）<br />
